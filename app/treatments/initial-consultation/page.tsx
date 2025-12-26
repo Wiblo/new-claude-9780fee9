@@ -27,7 +27,7 @@ export default function InitialConsultationPage() {
   }
 
   // Omit icon field before passing to client component
-  const { icon, ...treatmentData } = treatment
+  const { icon: _icon, ...treatmentData } = treatment
 
   return (
     <>

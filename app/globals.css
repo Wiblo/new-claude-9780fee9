@@ -61,20 +61,20 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.28 0 0); /* charcoal */
 
-  /* Primary brand color - sage green #8FB584 */
-  --primary: oklch(0.70 0.08 142); /* sage-primary */
-  --primary-foreground: oklch(0.99 0 0); /* white text on sage */
+  /* Primary brand color - Christmas red */
+  --primary: oklch(0.55 0.22 25); /* festive red #C41E3A */
+  --primary-foreground: oklch(0.99 0 0); /* white text on red */
 
-  /* Secondary colors - sage-soft #B8D4B0 for backgrounds */
-  --secondary: oklch(0.83 0.06 142); /* sage-soft for subtle backgrounds */
-  --secondary-foreground: oklch(0.28 0 0); /* charcoal text */
+  /* Secondary colors - Christmas green for backgrounds */
+  --secondary: oklch(0.45 0.15 145); /* festive green #165B33 */
+  --secondary-foreground: oklch(0.99 0 0); /* white text */
 
-  /* Muted colors - light backgrounds and warm-gray secondary text */
-  --muted: oklch(0.83 0.06 142); /* sage-soft for muted backgrounds */
+  /* Muted colors - light backgrounds with soft green */
+  --muted: oklch(0.92 0.03 145); /* light Christmas green for muted backgrounds */
   --muted-foreground: oklch(0.48 0 0); /* warm-gray #6B6B6B for secondary text */
 
-  /* Accent colors - sage accents */
-  --accent: oklch(0.83 0.06 142); /* sage-soft */
+  /* Accent colors - gold accents */
+  --accent: oklch(0.75 0.12 85); /* festive gold #D4AF37 */
   --accent-foreground: oklch(0.28 0 0); /* charcoal */
 
   /* Destructive colors */
@@ -84,7 +84,7 @@
   /* Border and input colors */
   --border: oklch(0.90 0 0); /* neutral light gray for borders */
   --input: oklch(0.90 0 0); /* neutral light gray */
-  --ring: oklch(0.70 0.08 142); /* sage-primary for focus rings */
+  --ring: oklch(0.55 0.22 25); /* Christmas red for focus rings */
 
   /* Chart colors */
   --chart-1: oklch(0.646 0.222 41.116);
@@ -96,15 +96,15 @@
   /* Sidebar colors */
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.65 0.08 150);
+  --sidebar-primary: oklch(0.55 0.22 25);
   --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.95 0.02 150);
+  --sidebar-accent: oklch(0.92 0.03 145);
   --sidebar-accent-foreground: oklch(0.25 0 0);
   --sidebar-border: oklch(0.90 0.01 150);
-  --sidebar-ring: oklch(0.65 0.08 150);
+  --sidebar-ring: oklch(0.55 0.22 25);
 
-  /* Custom color for primary hover state - sage-dark #7A9F6F */
-  --primary-hover: oklch(0.62 0.07 142);
+  /* Custom color for primary hover state - darker red */
+  --primary-hover: oklch(0.48 0.24 25);
 }
 
 .dark {
@@ -147,9 +147,17 @@
   }
   body {
     @apply bg-background text-foreground;
+    background-image:
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        oklch(1 0 0 / 0.03) 10px,
+        oklch(1 0 0 / 0.03) 20px
+      );
   }
 
-  /* Custom font families for chiropractor template */
+  /* Custom font families for Christmas template */
   .font-signature {
     font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   }
@@ -157,6 +165,7 @@
   .font-heading {
     font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
     letter-spacing: 0.05em;
+    text-shadow: 0 2px 4px oklch(0 0 0 / 0.1);
   }
 
   /* Image fallback styling - shows light gray placeholder when image fails to load */
@@ -218,8 +227,55 @@
     max-width: 50rem;
   }
 
-  /* Sage color utilities for text */
-  .text-sage-dark {
-    color: oklch(0.62 0.07 142); /* sage-dark #7A9F6F */
+  /* Christmas color utilities for text */
+  .text-christmas-red {
+    color: oklch(0.55 0.22 25); /* Christmas red */
+  }
+  .text-christmas-green {
+    color: oklch(0.45 0.15 145); /* Christmas green */
+  }
+  .text-christmas-gold {
+    color: oklch(0.75 0.12 85); /* Christmas gold */
+  }
+
+  /* Festive decorative elements */
+  .festive-border {
+    border: 3px solid oklch(0.55 0.22 25);
+    border-image: repeating-linear-gradient(
+      45deg,
+      oklch(0.55 0.22 25),
+      oklch(0.55 0.22 25) 10px,
+      oklch(0.45 0.15 145) 10px,
+      oklch(0.45 0.15 145) 20px
+    ) 1;
+  }
+
+  .christmas-sparkle {
+    position: relative;
+    animation: sparkle 2s ease-in-out infinite;
+  }
+
+  @keyframes sparkle {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.7; transform: scale(1.05); }
+  }
+
+  .snow-effect {
+    position: relative;
+  }
+
+  .snow-effect::before {
+    content: '❄';
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    opacity: 0.3;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
   }
 }

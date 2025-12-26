@@ -11,51 +11,51 @@ export interface FaqItem {
 export const faqs: FaqItem[] = [
   {
     id: 'first-visit',
-    question: 'What should I expect on my first visit?',
+    question: 'What should I expect on my first visit to Santa\'s Workshop?',
     answer:
-      "Your initial consultation includes a thorough history taking and physical examination to determine if chiropractic care is suitable for you. We'll discuss your health goals and create a personalized treatment plan. The first visit typically lasts 45 minutes to ensure we understand your needs completely. Follow-up appointments are 30 minutes.",
+      "Your initial consultation includes a thorough Nice List review and wish list evaluation to determine if you've been good enough for presents this year. We'll discuss your Christmas wishes and create a personalized gift plan. The first visit typically lasts 60 minutes and includes meeting Santa himself, warm cookies from Mrs. Claus, and a tour of the workshop!",
   },
   {
-    id: 'medical-aid',
-    question: 'Do you accept medical aid?',
+    id: 'nice-list',
+    question: 'How does Santa keep track of who\'s naughty or nice?',
     answer:
-      'Yes, we process medical aid claims on your behalf. We work with most major medical aids in South Africa. You settle your bill after your session and then we will submit the claim to your medical aid.',
+      'Santa uses his magical Nice List technology combined with centuries of experience. His network of Christmas elves reports back throughout the year, and Santa personally reviews each child\'s behavior before making his final decision. The magic helps him see good deeds even when nobody else is watching!',
   },
   {
-    id: 'painful',
-    question: 'Is chiropractic treatment painful?',
+    id: 'reindeer-delivery',
+    question: 'How do the reindeer fly and deliver everything in one night?',
     answer:
-      "Chiropractic adjustments are generally not painful. You may feel slight pressure or hear a popping sound, but the treatment is designed to relieve pain, not cause it. We adapt techniques to each patient's comfort level and always communicate throughout the treatment to ensure you're comfortable.",
+      "The reindeer are powered by pure Christmas magic! Rudolph's red nose lights the way, and together they can travel faster than the speed of light. Santa's magic sleigh has special time-bending abilities that allow him to visit every good child around the world on Christmas Eve.",
   },
   {
-    id: 'sessions',
-    question: 'How many sessions will I need?',
+    id: 'gift-timeline',
+    question: 'When will I receive my Christmas gifts?',
     answer:
-      "The number of sessions varies depending on your condition, its severity, and your health goals. After your initial assessment, we'll provide a treatment plan with an estimated timeline. Most patients see improvement within 2-4 sessions, though chronic conditions may require ongoing care.",
+      "All gifts are delivered on Christmas Eve while you're sleeping! After your initial Nice List consultation, the elves begin crafting your presents in the workshop. Gifts are loaded onto Santa's sleigh on Christmas Eve, and he delivers them that very night. You'll find them under your tree on Christmas morning!",
   },
   {
-    id: 'pregnancy',
-    question: 'Is chiropractic care safe during pregnancy?',
+    id: 'cookies-milk',
+    question: 'Does Santa really eat all the cookies left out for him?',
     answer:
-      'Yes, chiropractic care is safe and beneficial during pregnancy. We use specialized techniques designed for pregnant women to help manage pain and ensure proper pelvic alignment for easier delivery. Many women find relief from pregnancy-related back pain through gentle chiropractic care.',
+      'Yes! Santa absolutely loves cookies and milk. Mrs. Claus packs him snacks for the journey, but he makes sure to enjoy the treats left by each family. His favorites are chocolate chip cookies and sugar cookies, but he appreciates all homemade goodies. The magic keeps him from getting too full!',
   },
   {
-    id: 'children',
-    question: 'Can children receive chiropractic treatment?',
+    id: 'elves-help',
+    question: 'Can I meet the elves who make the toys?',
     answer:
-      'Absolutely! Children can benefit greatly from chiropractic care. We use gentle, age-appropriate techniques to address issues like colic, growing pains, sports injuries, and posture problems. Pediatric chiropractic care supports healthy development and can prevent future problems.',
+      'Absolutely! During your workshop tour, you\'ll meet our talented elves who craft all the presents. They love showing children how toys are made using both traditional techniques and a touch of Christmas magic. Each elf specializes in different types of gifts - from dolls to trains to modern electronics!',
   },
   {
-    id: 'appointment',
-    question: 'How do I book an appointment?',
+    id: 'visit-santa',
+    question: 'How do I schedule a visit with Santa?',
     answer:
-      'You can book an appointment through our online booking system at Sticks and Stones Wellness Hub, call us at 082 940 7129, or email kamilahjordaan@gmail.com. We offer flexible scheduling with appointments available 6 days a week to accommodate your busy lifestyle.',
+      'You can schedule your Nice List consultation through our magical booking portal at northpole.christmas/nice-list, send a letter to Santa at the North Pole, or call (555) HO-HO-HO. We offer appointments throughout the holiday season, with extended hours during December to accommodate all the excited children!',
   },
   {
-    id: 'what-to-wear',
-    question: 'What should I wear to my appointment?',
+    id: 'what-to-bring',
+    question: 'What should I bring to my visit?',
     answer:
-      'Wear comfortable, loose-fitting clothing that allows for movement. Avoid wearing dresses or skirts if possible, as you may need to perform certain movements during the examination.',
+      'Bring your Christmas spirit and your wish list! Dress warmly as the North Pole can be chilly, though our workshop is heated and cozy. Feel free to bring your parents, siblings, and even pets - Santa loves meeting the whole family. Don\'t forget to smile for photos with Santa!',
   },
 ]
 

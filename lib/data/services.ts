@@ -1,4 +1,4 @@
-import { Activity, Zap } from 'lucide-react'
+import { Gift, Sparkles } from 'lucide-react'
 import type { LucideIcon } from 'lucide-react'
 
 export interface Service {
@@ -25,64 +25,64 @@ export interface Service {
  */
 export const services: Service[] = [
   {
-    id: 'initial-consultation',
+    id: 'nice-list-check',
     slug: 'initial-consultation',
-    name: 'Initial Consultation',
+    name: 'Nice List Check & Gift Planning',
     description:
-      'Comprehensive first visit including thorough history taking, physical examination, and personalised treatment plan development to address your specific health concerns.',
+      'Comprehensive first visit to Santa\'s Workshop including behavior review, wish list evaluation, and personalized gift plan development to ensure the perfect Christmas morning surprise.',
     duration: '60 min',
-    price: 'R850',
-    image: '/arm-mobility-assessment.jpeg',
-    imageAlt: 'Professional arm mobility assessment during consultation',
-    icon: Activity,
+    price: 'Free (For nice children!)',
+    image: 'https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&auto=format&fit=crop',
+    imageAlt: 'Beautifully wrapped Christmas gifts under a decorated tree',
+    icon: Gift,
     benefits: [
-      'Complete health assessment',
-      'Diagnosis and explanation',
-      'Personalised treatment plan',
-      'First adjustment if suitable',
+      'Complete nice list verification',
+      'Wish list consultation',
+      'Personalized gift planning',
+      'Meet with Santa himself',
     ],
     featured: true,
     shortDescription:
-      'Your journey to optimal health begins with a comprehensive assessment',
+      'Your journey to a magical Christmas begins with a visit to Santa',
     fullDescription:
-      'During your initial consultation, Dr. Jordaan conducts a thorough evaluation of your health history, current concerns, and wellness goals. This includes a detailed physical examination, postural analysis, and functional movement assessment.\n\nUsing evidence-based diagnostic techniques, we identify the root cause of your discomfort and develop a personalized treatment plan tailored to your unique needs. If appropriate, your first chiropractic adjustment may be performed during this visit.',
+      'During your initial consultation at Santa\'s Workshop, jolly old Saint Nick himself conducts a thorough review of your year\'s behavior, evaluates your wish list, and works with you to ensure the perfect gift selection.\n\nUsing our magical Nice List technology and centuries of gift-giving expertise, Santa identifies exactly what will bring you the most joy on Christmas morning. Mrs. Claus may also provide warm cookies and hot cocoa during your visit!',
     idealFor: [
-      'New patients',
-      'Chronic pain',
-      'Sports injuries',
-      'Postural issues',
-      'Preventative care',
-      'Wellness optimization',
+      'All good children',
+      'Christmas believers',
+      'Holiday enthusiasts',
+      'Gift wishers',
+      'Cookie lovers',
+      'Spreading Christmas cheer',
     ],
   },
   {
-    id: 'follow-up',
+    id: 'elf-delivery',
     slug: 'follow-up-consultation',
-    name: 'Follow-Up Consultation',
+    name: 'Elf Express Delivery Service',
     description:
-      'Continued care appointments to monitor progress, adjust treatment plans, and provide therapeutic interventions tailored to your healing journey.',
+      'Ongoing magical delivery appointments to ensure your gifts arrive on time, track reindeer routes, and provide festive updates throughout the Christmas season.',
     duration: '30 min',
-    price: 'R650',
-    image: '/spinal-adjustment-treatment.jpeg',
-    imageAlt: 'Professional spinal adjustment treatment session',
-    icon: Zap,
+    price: 'Free (Part of Christmas magic!)',
+    image: 'https://images.unsplash.com/photo-1576919228236-a097c32a5cd4?w=800&auto=format&fit=crop',
+    imageAlt: 'Festive Christmas delivery with wrapped presents and decorations',
+    icon: Sparkles,
     benefits: [
-      'Progress evaluation',
-      'Treatment adjustments',
-      'Therapeutic interventions',
-      'Home care advice',
+      'Gift delivery tracking',
+      'Reindeer route updates',
+      'Festive progress reports',
+      'Christmas countdown alerts',
     ],
     featured: true,
     shortDescription:
-      'Ongoing care to maintain progress and achieve your health goals',
+      'Ongoing magical updates to track your Christmas delivery',
     fullDescription:
-      'Follow-up consultations are essential for monitoring your progress and ensuring optimal results. Each session includes a reassessment of your condition, targeted chiropractic adjustments, and complementary therapies as needed.\n\nDr. Jordaan adjusts your treatment plan based on your response to care, ensuring you continue progressing toward your health goals. These appointments also include guidance on exercises, lifestyle modifications, and self-care strategies to support your healing between visits.',
+      'Our Elf Express Delivery Service ensures you stay connected to the magic throughout the Christmas season. Each check-in includes updates on your gift preparation status, reindeer flight path tracking, and special messages from the elves working on your presents.\n\nSanta\'s head elf personally monitors your delivery schedule and provides regular updates on workshop progress. You\'ll receive notifications when your gifts are being wrapped, loaded onto the sleigh, and ready for Christmas Eve delivery!',
     idealFor: [
-      'Ongoing treatment',
-      'Maintenance care',
-      'Recovery monitoring',
-      'Pain management',
-      'Performance optimization',
+      'Excited children',
+      'Christmas countdown',
+      'Gift tracking enthusiasts',
+      'Holiday anticipation',
+      'Christmas magic believers',
     ],
   },
 ]

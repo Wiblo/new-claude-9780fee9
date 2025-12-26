@@ -30,7 +30,6 @@ export function LocationSection({
   className,
 }: LocationSectionProps) {
   const [showHours, setShowHours] = useState(false)
-  const [status, setStatus] = useState<{ isOpen: boolean; message: string } | null>(null)
 
   const mapEmbedUrl = getGoogleMapsEmbedUrl()
   const directionsUrl = getGoogleMapsDirectionsUrl()
@@ -102,20 +101,17 @@ export function LocationSection({
     }
   }
 
-  // Run status check only on client side to avoid hydration mismatch
-  useEffect(() => {
-    // Set initial status
-    const initialStatus = getCurrentStatus()
-    setStatus(initialStatus)
+  // Initialize status state with lazy initializer to avoid setState in effect
+  const [status, setStatus] = useState<{ isOpen: boolean; message: string }>(() => getCurrentStatus())
 
-    // Update status every minute
+  // Update status every minute
+  useEffect(() => {
     const interval = setInterval(() => {
       const newStatus = getCurrentStatus()
       setStatus(newStatus)
     }, 60000)
 
     return () => clearInterval(interval)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

@@ -1,39 +1,39 @@
 export const businessInfo = {
   // Core business details
-  name: "Practice Name Chiropractic",
-  tagline: "Quality chiropractic care in Your City",
+  name: "Santa's Workshop & Wellness",
+  tagline: "Spreading Christmas joy and festive cheer in the North Pole",
   logo: "/logo.png",
 
   // Contact information
-  phone: "(555) 123-4567",
-  phoneSecondary: "(555) 987-6543", // Optional second phone number
-  email: "contact@example.com",
+  phone: "(555) HO-HO-HO",
+  phoneSecondary: "(555) MERRY-XMS", // Optional second phone number
+  email: "santa@northpole.christmas",
 
   // Location
   address: {
-    street: "123 Main Street",
-    area: "", // Optional (e.g., "Building Name" or "Suite 100")
-    city: "Springfield",
-    state: "CA",
-    zip: "12345",
-    country: "US",
+    street: "1 Candy Cane Lane",
+    area: "Workshop District", // Optional (e.g., "Building Name" or "Suite 100")
+    city: "North Pole",
+    state: "Arctic",
+    zip: "99705",
+    country: "North Pole",
   },
 
   // Optional: Coordinates for map and LocalBusiness schema
   geo: {
-    latitude: 40.7128,
-    longitude: -74.0060,
+    latitude: 89.9950,
+    longitude: -135.0000,
   },
 
   // Business hours
   hours: {
-    monday: "9:00am - 6:00pm",
-    tuesday: "9:00am - 6:00pm",
-    wednesday: "9:00am - 6:00pm",
-    thursday: "9:00am - 6:00pm",
-    friday: "9:00am - 5:00pm",
-    saturday: "10:00am - 2:00pm",
-    sunday: "Closed",
+    monday: "8:00am - Midnight",
+    tuesday: "8:00am - Midnight",
+    wednesday: "8:00am - Midnight",
+    thursday: "8:00am - Midnight",
+    friday: "8:00am - Midnight",
+    saturday: "24 Hours (Christmas Rush!)",
+    sunday: "24 Hours (Christmas Rush!)",
   },
 
   // Social media profiles
@@ -46,9 +46,9 @@ export const businessInfo = {
   },
 
   // Site metadata
-  url: "https://example.com",
-  description: "Dedicated to helping people achieve a pain-free life through non-invasive healthcare.",
-  priceRange: "$$", // $, $$, $$$, or $$$$
+  url: "https://northpole.christmas",
+  description: "Dedicated to spreading Christmas magic, delivering presents, and bringing joy to children around the world. Home of Santa Claus, Mrs. Claus, and the hardworking elves.",
+  priceRange: "Free (Gifts for good children!)", // $, $$, $$$, or $$$$
 
   // Schema.org types for JSON-LD structured data
   // Customize based on your business type. Common combinations:
@@ -60,13 +60,13 @@ export const businessInfo = {
   schemaTypes: ['LocalBusiness', 'MedicalBusiness', 'HealthAndBeautyBusiness'] as const,
 
   // Booking/appointment URL
-  bookingUrl: "https://sticksandstoneswellnesshub.pencilmein.online/Booking",
+  bookingUrl: "https://northpole.christmas/nice-list",
 
   // Google Maps configuration
   maps: {
     apiKey: "AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8",
     // Location name for Google Maps searches
-    locationName: "Sticks and Stones Wellness Hub",
+    locationName: "Santa's Workshop & Wellness",
   },
 }
 
